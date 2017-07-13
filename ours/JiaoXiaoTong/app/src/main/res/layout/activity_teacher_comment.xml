@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/comment_stuID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="79dp"
+        android:ems="10"
+        android:hint="学号"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/comment_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/comment_stuID"
+        android:layout_alignStart="@+id/comment_stuID"
+        android:layout_below="@+id/comment_stuID"
+        android:layout_marginTop="96dp"
+        android:ems="10"
+        android:hint="评语"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/comment_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comment_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="67dp"
+        android:text="发布评语" />
+
+</RelativeLayout>

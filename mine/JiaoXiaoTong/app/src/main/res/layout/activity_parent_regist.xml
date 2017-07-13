@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.liberty.jiaoxiaotong.ParentRegistActivity">
+
+    <TextView
+        android:id="@+id/textView_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="请输入以下信息完成注册" />
+
+    <EditText
+        android:id="@+id/editText_parentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView_tips"
+        android:layout_marginLeft="73dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="姓名"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText_parentID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_parentName"
+        android:layout_alignStart="@+id/editText_parentName"
+        android:layout_below="@+id/editText_parentName"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="身份证号"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText_schoolID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_parentID"
+        android:layout_alignStart="@+id/editText_parentID"
+        android:layout_below="@+id/editText_parentID"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="学校编号"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText_studentID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_schoolID"
+        android:layout_alignStart="@+id/editText_schoolID"
+        android:layout_below="@+id/editText_schoolID"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="子女学号"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText_passwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_studentID"
+        android:layout_alignStart="@+id/editText_studentID"
+        android:layout_below="@+id/editText_studentID"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="密码"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editText_passwdConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_passwd"
+        android:layout_alignStart="@+id/editText_passwd"
+        android:layout_below="@+id/editText_passwd"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="确认密码"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText_passwdConfirm"
+        android:layout_alignLeft="@+id/editText_passwdConfirm"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/editText_passwdConfirm"
+        android:layout_alignStart="@+id/editText_passwdConfirm"
+        android:layout_marginBottom="20dp"
+        android:text="提交" />
+
+</RelativeLayout>

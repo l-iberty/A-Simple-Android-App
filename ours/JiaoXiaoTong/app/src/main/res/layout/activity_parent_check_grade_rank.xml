@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.liberty.jiaoxiaotong.ParentCheckGradeRankActivity">
+
+    <TextView
+        android:id="@+id/textView_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="您的孩子的成绩目前在年级上的排名为" />
+
+    <TextView
+        android:id="@+id/textView_gradeRank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_tips"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView_tips2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_gradeRank"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="希望您鼓励孩子再接再厉，取得更加优异的成绩" />
+</RelativeLayout>

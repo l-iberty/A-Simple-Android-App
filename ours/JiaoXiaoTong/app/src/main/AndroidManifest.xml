@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.liberty.jiaoxiaotong">
+
+    <!-- 基础模块（必须加入以下声明）START -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- 基础模块 END -->
+    <application
+        android:name=".MyLeanCloudApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="家校通"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegistActivity" />
+        <activity android:name=".SchoolRegistActivity" />
+        <activity android:name=".ParentRegistActivity" />
+        <activity android:name=".TeacherRegistActivity" />
+        <activity android:name=".SchoolLoginActivity" />
+        <activity android:name=".ParentLoginActivity" />
+        <activity android:name=".TeacherLoginActivity" />
+        <activity android:name=".StudInfoManageActivity" />
+        <activity android:name=".ParentCheckCommentActivity" />
+        <activity android:name=".StudInfoCheckActivity" />
+        <activity android:name=".TeacherCommentActivity" />
+        <activity android:name=".IssueGradeActivity" />
+        <activity android:name=".ParentCheckGradeRankActivity" />
+        <activity android:name=".ParentCheckHomeworkActivity" />
+        <activity android:name=".RewardPunishActivity" />
+        <activity android:name=".TeacherHomeworkActivity" />
+        <activity android:name=".ParentCheckRewardPunishActivity" />
+        <activity android:name=".SchoolPushActivity" />
+        <activity android:name=".ParentCheckSchoolPushActivity" />
+        <activity android:name=".NewsActivity" />
+        <activity android:name=".ParentCheckNoticeAndPush" />
+        <activity android:name=".TeacherIssueActivity" />
+        <activity android:name=".SchoolEditWebActivity" />
+        <activity android:name=".ParentCheckNoticeActivity" />
+    </application>
+
+</manifest>

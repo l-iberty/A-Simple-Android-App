@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="请您选择注册类型" />
+
+    <Button
+        android:id="@+id/button_school"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_tips"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:text="学校注册" />
+
+    <Button
+        android:id="@+id/button_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_school"
+        android:layout_alignStart="@+id/button_school"
+        android:layout_below="@+id/button_school"
+        android:layout_marginTop="37dp"
+        android:text="家长注册" />
+
+    <Button
+        android:id="@+id/button_teacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button_parent"
+        android:layout_alignRight="@+id/button_parent"
+        android:layout_below="@+id/button_parent"
+        android:layout_marginTop="35dp"
+        android:text="教师注册" />
+</RelativeLayout>

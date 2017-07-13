@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.liberty.jiaoxiaotong.TeacherLoginActivity">
+
+    <TextView
+        android:id="@+id/textView_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp"
+        android:text="选择您需要的操作" />
+
+    <Button
+        android:id="@+id/button_issueHomework"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_tips"
+        android:layout_marginTop="63dp"
+        android:layout_toLeftOf="@+id/textView_tips"
+        android:layout_toStartOf="@+id/textView_tips"
+        android:text="发布作业" />
+
+    <Button
+        android:id="@+id/button_commentStud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button_issueHomework"
+        android:layout_toEndOf="@+id/textView_tips"
+        android:layout_toRightOf="@+id/textView_tips"
+        android:text="评价学生" />
+
+    <Button
+        android:id="@+id/button_talkwithParent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="联系家长" />
+
+    <Button
+        android:id="@+id/button_studRewardPunish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_issueHomework"
+        android:layout_alignStart="@+id/button_issueHomework"
+        android:layout_below="@+id/button_talkwithParent"
+        android:layout_marginTop="23dp"
+        android:text="学生奖罚" />
+
+    <Button
+        android:id="@+id/button_issueAvtivities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_commentStud"
+        android:layout_alignStart="@+id/button_commentStud"
+        android:layout_alignTop="@+id/button_studRewardPunish"
+        android:text="发布活动" />
+
+    <TextView
+        android:id="@+id/textView_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginTop="26dp" />
+
+</RelativeLayout>

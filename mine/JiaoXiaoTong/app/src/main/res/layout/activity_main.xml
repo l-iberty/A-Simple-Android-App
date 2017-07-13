@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editText_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="83dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="63dp"
+        android:ems="10"
+        android:hint="账号"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText_passwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:ems="10"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:layout_below="@+id/editText_account"
+        android:layout_alignRight="@+id/button_login"
+        android:layout_alignEnd="@+id/button_login" />
+
+    <Button
+        android:id="@+id/button_regist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="注册"
+        android:layout_below="@+id/editText_passwd"
+        android:layout_alignLeft="@+id/editText_passwd"
+        android:layout_alignStart="@+id/editText_passwd" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button_regist"
+        android:layout_alignEnd="@+id/editText_account"
+        android:layout_alignRight="@+id/editText_account"
+        android:text="登录" />
+
+    <TextView
+        android:id="@+id/textView_selectLoginType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_regist"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:text="如果您想登录，请选择登录类型" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView_selectLoginType"
+        android:layout_alignLeft="@+id/textView_selectLoginType"
+        android:layout_alignStart="@+id/textView_selectLoginType"
+        android:layout_alignParentBottom="true">
+
+        <RadioButton
+            android:id="@+id/radioButton_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView_selectLoginType"
+            android:layout_alignStart="@+id/textView_selectLoginType"
+            android:layout_below="@+id/textView_selectLoginType"
+            android:layout_marginTop="36dp"
+            android:text="学校登录" />
+
+        <RadioButton
+            android:id="@+id/radioButton_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/radioButton_school"
+            android:layout_alignStart="@+id/radioButton_school"
+            android:layout_below="@+id/radioButton_school"
+            android:layout_marginTop="13dp"
+            android:text="家长登录" />
+
+        <RadioButton
+            android:id="@+id/radioButton_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/radioButton_parent"
+            android:layout_alignStart="@+id/radioButton_parent"
+            android:layout_below="@+id/radioButton_parent"
+            android:layout_marginTop="23dp"
+            android:text="教师登录" />
+
+    </RadioGroup>
+
+</RelativeLayout>

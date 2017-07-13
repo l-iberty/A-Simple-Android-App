@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.liberty.jiaoxiaotong.TeacherIssueActivity">
+
+    <Button
+        android:id="@+id/button_select_publish"
+        style="?android:textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="seletct_a_pic"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edittext_title_publish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="活动内容"
+        android:inputType="textPersonName" />
+
+
+
+    <ImageView
+        android:id="@+id/imageview_select_publish"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:src="@android:drawable/screen_background_light_transparent" />
+    <Button
+        android:id="@+id/button_submit_publish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|left"
+        android:layout_marginLeft="43dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="32dp"
+        android:text="Commit" />
+
+</LinearLayout>

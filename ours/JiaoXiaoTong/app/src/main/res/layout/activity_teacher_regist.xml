@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.liberty.jiaoxiaotong.TeacherRegistActivity">
+
+    <TextView
+        android:id="@+id/textView_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:text="请输入以下信息完成注册" />
+
+    <EditText
+        android:id="@+id/editText_teacherName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_tips"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:hint="姓名"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText_teacherID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText_teacherName"
+        android:layout_alignRight="@+id/editText_teacherName"
+        android:layout_below="@+id/editText_teacherName"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="教师编号"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText_schoolID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="学校编号"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/editText_teacherID"
+        android:layout_alignLeft="@+id/editText_teacherID"
+        android:layout_alignStart="@+id/editText_teacherID"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editText_passwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:layout_below="@+id/editText_classID"
+        android:layout_alignLeft="@+id/editText_schoolID"
+        android:layout_alignStart="@+id/editText_schoolID" />
+
+    <EditText
+        android:id="@+id/editText_passwdConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="确认密码"
+        android:inputType="textPassword"
+        android:layout_below="@+id/editText_passwd"
+        android:layout_alignLeft="@+id/editText_passwd"
+        android:layout_alignStart="@+id/editText_passwd" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editText_passwdConfirm"
+        android:layout_alignLeft="@+id/editText_passwdConfirm"
+        android:layout_alignRight="@+id/editText_passwdConfirm"
+        android:layout_alignStart="@+id/editText_passwdConfirm"
+        android:layout_below="@+id/editText_passwdConfirm"
+        android:layout_marginTop="18dp"
+        android:text="提交" />
+
+    <EditText
+        android:id="@+id/editText_classID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_passwd"
+        android:layout_alignStart="@+id/editText_passwd"
+        android:layout_below="@+id/editText_schoolID"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="班级编号"
+        android:inputType="textPersonName" />
+
+</RelativeLayout>
